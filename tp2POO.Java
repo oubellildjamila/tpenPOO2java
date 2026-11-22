@@ -1,8 +1,8 @@
 import java.time.Year;   // pour obtenir l'année actuelle (Exercice 2)
 
-// ==========================================================
+
 // EXERCICE 1 : classe Rectangle
-// ==========================================================
+
 class Rectangle {
 
     // Attributs privés : accessibles seulement via les getters/setters (encapsulation)
@@ -50,9 +50,9 @@ class Rectangle {
     }
 }
 
-// ==========================================================
+
 // EXERCICE 2 : classe Livre
-// ==========================================================
+
 class Livre {
 
     // Attributs privés
@@ -93,9 +93,9 @@ class Livre {
     }
 }
 
-// ==========================================================
+
 // EXERCICE 3 : classe Etudiant
-// ==========================================================
+
 class Etudiant {
 
     // Attribut de classe (static) : partagé par tous les étudiants, compte les objets créés
@@ -147,12 +147,11 @@ class Etudiant {
     }
 }
 
-// ==========================================================
 // CLASSE PRINCIPALE (public, même nom que le fichier) : les tests
-// ==========================================================
+
 public class TP2 {
 
-    // ----- TestRectangle -----
+    //  TestRectangle 
     static void testRectangle() {
         Rectangle r = new Rectangle(5, 3);   // appelle le constructeur
 
@@ -171,7 +170,7 @@ public class TP2 {
         System.out.println("Diagonale : " + r.diagonale());   // racine de 116
     }
 
-    // ----- TestLivre -----
+    //  TestLivre
     static void testLivre() {
         Livre l1 = new Livre("Le Petit Prince", "Antoine de Saint-Exupery", 1943, 96);
         Livre l2 = new Livre("Les Miserables", "Victor Hugo", 1862, 1488);
@@ -189,7 +188,7 @@ public class TP2 {
             // (condition ? siVrai : siFaux) : écriture courte d'un if/else
             System.out.println("Ancien     : " + (l.estAncien() ? "oui" : "non"));
             System.out.println("Volumineux : " + (l.estVolumineux() ? "oui" : "non"));
-            System.out.println("-------------------------");
+        
         }
     }
 
@@ -216,7 +215,7 @@ public class TP2 {
         }
 
         // (c) Affichage de chaque étudiant
-        System.out.println("--- Etudiants tries par moyenne decroissante ---");
+        System.out.println(" Etudiants tries par moyenne decroissante ");
         for (int i = 0; i < tab.length; i++) {
             tab[i].afficher();
         }
@@ -225,15 +224,15 @@ public class TP2 {
         System.out.println("\nNombre d'etudiants crees : " + Etudiant.getNombreEtudiants());
     }
 
-    // ----- Programme principal -----
+    //  Programme principal 
     public static void main(String[] args) {
-        System.out.println("===== EXERCICE 1 : Rectangle =====");
+        System.out.println("EXERCICE 1 : Rectangle ");
         testRectangle();
 
-        System.out.println("\n===== EXERCICE 2 : Livre =====");
+        System.out.println("\n EXERCICE 2 : Livre ");
         testLivre();
 
-        System.out.println("\n===== EXERCICE 3 : Etudiant =====");
+        System.out.println("\n EXERCICE 3 : Etudiant");
         testEtudiant();
     }
 }
