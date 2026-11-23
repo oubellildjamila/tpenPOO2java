@@ -192,7 +192,7 @@ public class TP2 {
         }
     }
 
-    // ----- TestEtudiant -----
+    // TestEtudiant
     static void testEtudiant() {
         // (a) Tableau de 5 étudiants
         Etudiant[] tab = new Etudiant[5];
